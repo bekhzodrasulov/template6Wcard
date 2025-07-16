@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: "Cormorant Infant", serif;
+  background-color: #fefefc;
+  color: #2c2c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.wrapper {
+  overflow: hidden;
+}
+
+.invitation {
+  width: 100%;
+  margin: auto;
+  max-width: 600px;
+  padding: 20px 0 0 0;
+}
+
+.column {
+  background: #ffffff;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.column.green {
+  background-color: #51785d;
+  color: white;
+}
+
+.border-box {
+  border: 1px solid #51785d;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.text-block,
+.program,
+.chat,
+.contacts,
+.closing,
+.venue,
+.dress-code,
+.details,
+.qr {
+  text-align: center;
+}
+
+.palette {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.dark-green {
+  background-color: #2d3c33;
+}
+.green {
+  background-color: #4e6650;
+}
+.olive {
+  background-color: #7c9473;
+}
+.beige {
+  background-color: #d5d2c2;
+}
+.white {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+
+.venue img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.qr img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.wadding-date {
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+/* Базовый класс для скрытых элементов */
+.animate {
+  opacity: 0;
+  transition: all 2s ease-out;
+  will-change: opacity, transform;
+}
+
+/* Картинки: слева направо */
+.slide-left {
+  transform: translateX(-50px);
+}
+.slide-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Картинки: справа налево */
+.slide-right {
+  transform: translateX(50px);
+}
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Текст: снизу вверх */
+.fade-up {
+  transform: translateY(40px);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+}
